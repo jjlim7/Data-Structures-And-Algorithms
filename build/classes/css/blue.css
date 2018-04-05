@@ -1,0 +1,21 @@
+#AnchorPane {
+	-fx-background-color: #D8EDFE;
+}
+
+#MenuBar {
+	-fx-background-color: #Abd9ff;
+}
+
+#headerLabel {
+	-fx-text-fill: #4682B4;
+}
+
+.table-view {
+        -fx-control-inner-background: #F0FFFF;
+	-fx-control-inner-background-alt: #F0F8FF;
+}
+
+.list-view {
+        -fx-control-inner-background: #F0F8FF;
+	-fx-control-inner-background-alt: #E0FFFF;
+}

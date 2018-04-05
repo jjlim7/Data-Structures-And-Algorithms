@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="385.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EventWindowController">
+   <children>
+      <ListView fx:id="listViewEvents" layoutX="14.0" layoutY="29.0" prefHeight="305.0" prefWidth="170.0" />
+      <Label layoutX="209.0" layoutY="23.0" text="Event Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldEventTitle" layoutX="209.0" layoutY="60.0" prefHeight="32.0" prefWidth="270.0" />
+      <Label layoutX="209.0" layoutY="100.0" text="Projects">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="209.0" layoutY="132.0" prefHeight="201.0" prefWidth="480.0" />
+      <Button fx:id="buttonAddEvent" layoutX="14.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="80.0" text="Add Event">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonRemoveEvent" layoutX="209.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="170.0" text="Delete Event">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonUpdateEvent" layoutX="578.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="110.0" text="Update Event">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Button fx:id="buttonSort" layoutX="104.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleSortAction" prefHeight="29.0" prefWidth="80.0" text="Sort" />
+   </children>
+</AnchorPane>

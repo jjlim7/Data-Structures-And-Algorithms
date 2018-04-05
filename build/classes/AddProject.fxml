@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="585.0" prefWidth="425.0" style="-fx-background-color: #f7f7f7;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddProjectController">
+   <children>
+      <Rectangle fill="#5297d7" height="45.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="425.0" />
+      <Label layoutX="12.0" layoutY="7.0" prefHeight="30.0" prefWidth="115.0" text="Add Project" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="18.0" layoutY="52.0" text="Title:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldTitle" layoutX="18.0" layoutY="83.0" onKeyReleased="#validationChecking" prefHeight="32.0" prefWidth="236.0" />
+      <Label layoutX="18.0" layoutY="123.0" text="School:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldSchool" layoutX="18.0" layoutY="154.0" onKeyReleased="#validationChecking" prefHeight="32.0" prefWidth="133.0" />
+      <Label layoutX="18.0" layoutY="196.0" text="Supervisor Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldSupervisorName" layoutX="18.0" layoutY="227.0" onKeyReleased="#validationChecking" prefHeight="32.0" prefWidth="272.0" />
+      <TableView fx:id="table" layoutX="18.0" layoutY="289.0" prefHeight="240.0" prefWidth="360.0" />
+      <Button fx:id="buttonAddProj" disable="true" focusTraversable="false" layoutX="20.0" layoutY="535.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="40.0" prefWidth="385.0" style="-fx-background-color: #5297d7;" text="Add Project" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonAdd" layoutX="385.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleButtonTableAction" onMouseReleased="#validationChecking" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: #5BB85D;" text="+" textFill="WHITE" />
+      <Button fx:id="buttonMinus" layoutX="385.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleButtonTableAction" onMouseReleased="#validationChecking" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: #D9544F;" text="-" textFill="WHITE" />
+      <Label layoutX="19.0" layoutY="272.0" text="Mouse Click to edit the table cell, Enter Key to Save" textFill="#0acd00">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

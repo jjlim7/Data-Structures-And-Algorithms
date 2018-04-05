@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="267.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OptionsWindowController">
+   <children>
+      <Label layoutX="87.0" layoutY="14.0" text="Options">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="54.0" text="Project File Directory">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="106.0" text="Event File Directory">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="158.0" text="Theme">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldProject" editable="false" focusTraversable="false" layoutX="20.0" layoutY="73.0" prefHeight="25.0" prefWidth="178.0" />
+      <TextField fx:id="textFieldEvent" editable="false" focusTraversable="false" layoutX="20.0" layoutY="125.0" prefHeight="25.0" prefWidth="178.0" />
+      <Button fx:id="buttonProject" layoutX="198.0" layoutY="73.0" mnemonicParsing="false" onAction="#handleDirAction" prefHeight="25.0" prefWidth="25.0" text="..." />
+      <Button fx:id="buttonEvent" layoutX="198.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleDirAction" prefHeight="25.0" prefWidth="25.0" text="..." />
+      <ComboBox fx:id="comboBoxTheme" layoutX="20.0" layoutY="177.0" prefWidth="150.0" />
+      <Button fx:id="buttonUpdate" layoutX="20.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="100.0" text="Update">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonCancel" layoutX="126.0" layoutY="217.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="29.0" prefWidth="100.0" text="Cancel">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      
+      <Button fx:id="buttonProjectClear" layoutX="170.0" layoutY="71.0" mnemonicParsing="false" onMousePressed="#handleButtonClearAction" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: transparent;" text="X">
+         <font>
+            <Font name="Gill Sans MT Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonEventClear" layoutX="170.0" layoutY="123.0" mnemonicParsing="false" onMousePressed="#handleButtonClearAction" prefHeight="30.0" prefWidth="28.0" style="-fx-background-color: transparent;" text="X">
+         <font>
+            <Font name="Gill Sans MT Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

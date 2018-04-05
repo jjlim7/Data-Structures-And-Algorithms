@@ -1,0 +1,11 @@
+10
+iPhone App,EEE,John Tan,1,P109520,Kelvin Tay,DBIT,M
+iPad App,DMIT,Mark Goh,3,P106286,Felicia Wong,DIT,F,P101803,Rachel Chang,DIT,F,P100036,Lewis Poh,DBIT,M
+Green Living,DMIT,Audrey Lim,2,P101234,Peter Chua,DIT,M,P103287,Ng Ming Shu,DISM,F
+Money Inoovation,SB,Tan Hock Pei,3,P1234567,Mary,DAC,F,P8765123,Marry,DAC,F,P7547226,Maple,DAC,F
+Art Design,SD,Ferry Chan,2,P1234567,Peter,SVDVD,F,P7967862,May,SVDVD,M
+Robotic Engine,EEE,Lim Cheng Kang,1,P4756786,John Lims,DMIT,M
+Drama Performance,CASS,Pauline Fong,1,P4537432,Chermaine Lim,CASS,F
+Electronic Circuits,EEE,Tan Kin,2,P151958,Peter Ang,EEE,M,P7357251,Name,EEE,M
+Wheelchair Design,EEE,Tan Lee,1,P7833785,Jeremy,EEE,M
+Android App,DMIT,Chong Pei Ser,2,P5454657,Lim Wee,DMIT,M,P2375478,Kim Goh,DMIT,M

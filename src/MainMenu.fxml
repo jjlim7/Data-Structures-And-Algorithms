@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="280.0" prefWidth="535.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuController">
+   <children>
+      <Label id="headerLabel" layoutX="66.0" layoutY="24.0" text="Welcome to FYP Management">
+         <font>
+            <Font name="Calibri Bold" size="32.0" />
+         </font>
+      </Label>
+        <ImageView fx:id="imageViewProjects" layoutX="15.0" layoutY="85.0" onMouseClicked="#handleOnMouseClicked">
+          <image>
+             <Image url="@images/projects.png" />
+          </image>
+       </ImageView>
+      <ImageView fx:id="imageViewEvents" layoutX="192.0" layoutY="85.0" onMouseClicked="#handleOnMouseClicked">
+         <image>
+            <Image url="@images/events.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imageViewOptions" layoutX="370.0" layoutY="85.0" onMouseClicked="#handleOnMouseClicked">
+         <image>
+            <Image url="@images/options.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
